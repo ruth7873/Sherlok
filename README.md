@@ -57,14 +57,8 @@ To run the game on your local machine, follow these steps:
 
 ## Credits
 
-This project was developed by [ruth7873](https://github.com/ruth7873).  
-Special thanks to contributors and testers who helped improve the game.
+This project was developed by [ruth7873](https://github.com/ruth7873) & [ZipiLindenfeld](https://github.com/ZipiLindenfeld) &  [tamar9458](https://github.com/tamar9458) .
 
-## License
-
-This project is licensed under the terms of the applicable license. Please refer to the `LICENSE` file for details.
-
----
 
 Enjoy the game! 🎮
 
