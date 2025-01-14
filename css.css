@@ -1,0 +1,413 @@
+@font-face{
+    font-family: "Shluk DL v2 AAA";    
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/shluk-regular-aaa.otf) format("openType");
+}
+#box {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+/*  הוראות משחק*/
+#img_i {
+    display: block;
+    border-radius: 0px;
+    width:100%;
+    height:100%;
+}
+#instruction {
+    background-color: #24abde;
+}
+#small_inst{
+    display: none;
+    width: 100%;
+}
+#a_instruct {
+    height: 50%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+}
+/**/
+#game {
+    display: block;
+    height: 80vh;
+}
+
+.close {
+    display: none;
+}
+
+#board {
+    position: relative;
+    height: 336px;
+    width: 336px;
+    margin: 10vh auto;
+}
+
+.img {
+    position: absolute;
+    user-select: none;
+}
+
+img {
+    border-radius: 15%;
+    height: 225px;
+    user-select: none;
+}
+.img:nth-child(1) {
+    bottom: 141%;
+    right: 21%;
+}
+
+.img:nth-child(2) {
+    transform: rotate(45deg);
+    bottom: 115%;
+    left: 94%;
+}
+
+.img:nth-child(3) {
+    transform: rotate(90deg);
+    left: 118%;
+    bottom: 53%;
+}
+
+.img:nth-child(4) {
+    transform: rotate(135deg);
+    top: 41%;
+    left: 92%;
+}
+
+.img:nth-child(5) {
+    transform: rotate(180deg);
+    top: 66%;
+    right: 23%;
+}
+
+.img:nth-child(6) {
+    transform: rotate(225deg);
+    top: 41%;
+    right: 87%
+}
+
+.img:nth-child(7) {
+    transform: rotate(270deg);
+    right: 112%;
+    bottom: 53%;
+}
+
+.img:nth-child(8) {
+    transform: rotate(315deg);
+    bottom: 115%;
+    right: 85%;
+}
+
+.closed:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/close_card.png);
+    z-index: 9;
+    border-radius: 15%;
+    background-size: 100%;
+}
+#body_game{
+    background-image: url(images/רקע/image3_6054_2022-12-27_13-13-55.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+#init_players{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    direction: rtl;
+}
+
+input {
+   margin: 10px  10px;
+    height: 50px;
+    width:150px; 
+    border-bottom-width:1px ;
+    border-bottom-style:black ;
+    border-top-style: none; 
+    border-left-style: none; 
+    border-right-style: none;
+    font-size: large;   
+    text-align:center;
+}
+.input_n{
+    height: 10%;
+    width:25%; 
+     font-size: 150%;
+      opacity: 70%;
+      text-align:center;
+}
+
+.chosen_card:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/שרלוק_טוב.png);
+    z-index: 9;
+    border-radius: 15%;
+}
+
+#board {
+    margin-top: 25%;
+}
+
+/*home--------*/
+#home {
+    background-color: #140808;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    /*עיצוב כל הקישורים*/
+    text-decoration: none;
+    height: 30px;
+    margin: 10px, 10px;
+    background-color: white;
+    font-size: 25px;
+    border: 1.5px solid #0073aa;
+    border-radius: 12px;
+    padding: 5px;
+    margin-bottom: 20px;
+    color: black;
+
+
+}
+#a_instruct{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 70%;
+    left: 35%;    
+}
+#a_home{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 31%;
+    left: 7%;    
+}
+#a_home a,#a_instruct a{
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    font-size: 0px;
+  padding: 0%;
+  margin-bottom: 50%; 
+}
+a img{
+    height: 150px;
+    widows: 200px;
+}
+
+
+#box {
+    height: 95vh;
+    width: auto;
+    overflow: hidden;
+}
+
+h1{
+    display: flex;
+    justify-self: center;
+    font-size: 137px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: center;
+    direction: rtl;
+    font-family: Shluk DL v2 AAA;
+}
+
+
+#timer {
+    font-size: 50px;
+    font-style: italic;
+    font-family: Shluk DL v2 AAA;
+    font-weight: bolder;
+    color: #24abde;
+    position: relative;
+    left: 47%;
+    top: -25%;
+
+}
+
+#answer {
+    font-size: 25px;
+    font-family: Shluk DL v2 AAA;
+    font-weight: bolder;
+    color: #24abde;
+    direction: rtl;
+    align-content: center;
+    position: absolute;
+    top: -5%;
+    left:20%;
+}
+#player_name{
+    font-size: 30px;
+}
+#img_win{
+width: 100%;
+height: 100%;
+}
+@media(max-width:1500px) {
+    #empty{
+         height:10vh;
+     }
+     h1 {
+        font-size: 103px;
+        top: 37%;
+        left: 23%;
+    }
+
+}
+@media(max-width:1100px) {
+    #empty{
+         height:20vh;
+     }
+#img_i{
+    display: none;
+}
+#small_inst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.small_img{
+    width: 70%;
+    height: 100%;
+    border-radius: 0;
+}
+#a_instruct{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 25%;
+    position: fixed;
+}
+h1 {
+    font-size: 71px;
+    top: 24%;
+    left: 21%;
+}
+
+}
+@media(max-width:800px) {
+    #box{width: 100%;
+    height: 100%;}
+    #a_home{
+       position: fixed;
+       top: 0;
+       width: 75%;
+       height: 75%;
+    }
+    img {
+        height: 100px;
+    }
+    .img:nth-child(1) {
+        bottom: 128%;
+        right: 37%;
+    }
+    
+    .img:nth-child(2) {
+        transform: rotate(45deg);
+        bottom: 114%;
+        left: 73%;
+    }
+    
+    .img:nth-child(3) {
+        transform: rotate(90deg);
+        left: 87%;
+        bottom: 82%;
+    }
+    
+    .img:nth-child(4) {
+        transform: rotate(135deg);
+        top: 16%;
+        left: 75%;
+    }
+    
+    .img:nth-child(5) {
+        transform: rotate(180deg);
+        top: 28%;
+        right: 39%;
+    }
+    
+    .img:nth-child(6) {
+        transform: rotate(225deg);
+        top: 16%;
+        right: 72%;
+    }
+    
+    .img:nth-child(7) {
+        transform: rotate(270deg);
+        right: 84%;
+    bottom: 82%;
+    }
+    
+    .img:nth-child(8) {
+        transform: rotate(315deg);
+        bottom: 114%;
+        right: 72%;
+    }
+    input {    
+         height: 25px;
+         width:90px; 
+         border-bottom-width:1px ;
+         border-bottom-style:black ;
+         border-top-style: none; 
+         border-left-style: none; 
+         border-right-style: none;
+         font-size: large;   
+         text-align:center;
+         position: relative;
+         right: -30%;
+     }
+     #player_name{
+         font-size: 20px;
+         position: relative;
+         top: 45%;
+         right: -30%;
+     }
+     #answer{
+        font-size: 20px;
+     }
+     #timer{
+        font-size: 34px;
+     }
+     .input_n{
+        font-size: small;
+        right: inherit;
+     }   
+     h1 {
+        font-size: 49px;
+        top: 18%;
+        left: 19%;
+    }
+}
+
